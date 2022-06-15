@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Abouy</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="2332.png" id="moon">
+        <img src="montanha2.png" id="montanha1">
+        <h2 id="text">DKRV VINTAGE</h2>
+        <a href="#sec" id="btn">Compra Agora</a>
+        <img src="montanha.png" id="montanha2">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Sobre Nos</h2>
+        <div class="texto1">
+        <div class="texto01">
+            <p class="test1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus cumque exercitationem adipisci repudiandae recusandae iste ratione nesciunt, itaque deleniti mollitia sequi. Incidunt sequi dolores velit rerum voluptates unde ea nulla.</p>
+        </div>
+
+        <div class="img1">
+            <img src="LOGO.png" alt="">
+        </div>
+    </div>
+</div>
+<script>
+    let stars = document.getElementById('stars')
+    let moon = document.getElementById('moon')
+    let mountains_behind = document.getElementById('montanha1')
+    let text = document.getElementById('text')
+    let btn = document.getElementById('btn')
+    let mountains_front = document.getElementById('motanha2')
+    let header = document.getElementById('header')
+
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+             stars.style.left = value * 0.25 + 'px'
+             moon.style.top = value * 1.05 + 'px'
+             montanha2.style.top = value * 0 + 'px'
+             text.style.marginTop = value * 2.0 + 'px'
+             btn.style.marginTop = value * 1.5 + 'px'
+             header.style.Top = value * 1.5 + 'px'
+        
+    })
+</script>
+</body>
+</html>

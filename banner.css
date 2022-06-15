@@ -1,0 +1,12 @@
+
+    html{
+        scroll-behavior: smooth;
+        }
+        
+        
+        .banner{
+            background-image: url("banner.");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
